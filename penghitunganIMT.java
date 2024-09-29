@@ -2,6 +2,7 @@ import java.util.Scanner;
 
 public class penghitunganIMT {
     public static void main(String[] args) {
+
         Scanner scan = new Scanner(System.in);
         double bb,tb,hasil;
 
@@ -12,7 +13,10 @@ public class penghitunganIMT {
         tb = scan.nextDouble();
         hasil = bb/(tb*tb);
 
-        if (hasil <= 18.5){
+        if (hasil <= 0 ){
+            System.out.println("Tidak valid");
+        }
+        else if (hasil <= 18.5){
             System.out.printf("IMT = %.2f",hasil);
             System.out.println(" Termasuk kurus");
         }
