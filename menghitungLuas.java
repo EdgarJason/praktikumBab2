@@ -43,8 +43,12 @@ public class menghitungLuas {
                 System.out.print("Masukkan c = ");
                 c=scan.nextInt();
                 System.out.println("");
+
+                int s = (a+b+c)/2;
+                int luasSegitiga = (int) Math.sqrt(s*(s-a)*(s-b)*(s-c));
+
                 System.out.println("Keliling segitiga = "+(a+b+c)+" cm");
-                System.out.println("Luas segitiga = "+((a*b)/2)+" cm2");
+                System.out.println("Luas segitiga = "+luasSegitiga+" cm2");
             }
             default -> {
                 System.out.println("Data tak ditemukan, program dihentikan ...");
