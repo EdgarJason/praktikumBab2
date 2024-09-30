@@ -21,7 +21,7 @@ public class programGaji {
             System.out.println("Total = Rp. "+(300000+lembur));
         }
 
-        else if (jam<0){
+        else if (jam<=0){
             System.out.println("Input tidak valid!");
         }
 
